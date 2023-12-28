@@ -25,7 +25,6 @@ app.use(express.json({ limit: "50mb" }));
 // making middleware for static files
 app.use(express.static("uploads"));
 app.use(express.static("images"));
-app.use(express.static("public/videos"));
 
 // making middleware for differnt-different API call
 app.use("/api/user", userRouter);
