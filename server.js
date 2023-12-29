@@ -12,7 +12,7 @@ const { createServer } = require("node:http");
 
 const app = express();
 
-const PORT = process.env.PORT || 8021;
+const PORT = process.env.PORT;
 connectDb();
 const server = createServer(app);
 const io = new Server(server);
